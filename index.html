@@ -336,7 +336,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="button-modal" data-modal-close width="30" height="30">
+        <svg class="button-modal" data-modal-close width="11" height="11">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
         <form action="" class="modal-form">
@@ -358,7 +358,7 @@
             </svg>
           </div>
 
-          <div class="modal-form-field">
+          <div class="modal-form-field last">
             <input type="email" name="user-email" id="user-email" class="modal-form-input" />
             <label class="modal-form-input-label" for="user-phone">Почта</label>
             <svg class="modal-form-icon" width="20" height="20">
@@ -367,7 +367,12 @@
           </div>
 
           <label class="modal-form-input-text" for="user-message">Коментарий</label>
-          <textarea name="user-message" id="user-message" class="modal-form-message"></textarea>
+          <textarea
+            name="user-message"
+            id="user-message"
+            class="modal-form-message"
+            placeholder="Введите текст"
+          ></textarea>
 
           <input type="checkbox" name="user-policy" id="user-policy" class="modal-form-check visually-hidden" />
           <lable for="user-policy" class="label-form-modal-check"
@@ -375,7 +380,7 @@
               >Соглашаюсь с рассылкой и принимаю<a class="modal-check-link" href="#">Условия договора</a></span
             >
           </lable>
-          <button type="submit" class="modal-form-btn">Отправить</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
       </div>
     </div>

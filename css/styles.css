@@ -635,7 +635,7 @@ b {
   left: 50%;
   top: 100px;
   padding: 0 40px;
-  padding-top: 75px;
+  /* padding-top: 75px; */
   transform: translateX(-50%) scale(1);
   width: 528px;
   height: 581px;
@@ -650,7 +650,13 @@ b {
   top: 10px;
   cursor: pointer;
   fill: var(--title-text-color);
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
+
 .button-modal:active,
 .button-modal:hover {
   fill: var(--accent-color);
@@ -672,6 +678,7 @@ b {
 .modal-form {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 .modal-form-input {
   width: 100%;
@@ -696,6 +703,8 @@ b {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .modal-form-icon {
@@ -709,6 +718,9 @@ b {
 .modal-form-field {
   position: relative;
   margin-bottom: 40px;
+}
+.modal-form-field.last {
+  margin-bottom: 0;
 }
 
 .modal-form-input-label {
@@ -764,6 +776,12 @@ b {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.modal form .button {
+  /* display: inline-flex; */
+  /* align-items: center; */
+  width: 200px;
+  height: 50px;
 }
 
 /* Стили для portfolio.html */
