@@ -473,12 +473,6 @@ span {
   align-items: baseline;
   flex-wrap: wrap;
   /* max-width: 270px; */
-  /* padding-top: 60px;
-  padding-bottom: 60px;
-  max-height: 252px;
-  max-width: 1600px;
-
-  background-color: var(--footer-color); */
 }
 
 .address {
