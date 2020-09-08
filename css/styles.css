@@ -208,6 +208,7 @@ span {
 .button:active {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  outline: none;
 }
 /* Section advantages */
 .section-title-hidden {
