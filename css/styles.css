@@ -46,7 +46,7 @@ footer .logo {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-span {
+.logo > span {
   color: var(--accent-color);
 }
 /* Cтили для index.html */
@@ -172,12 +172,12 @@ span {
   justify-content: center;
   align-items: center;
   height: 600px;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 1600px 600px;
+  background-size: 100%;
 }
 
 .hero-section {
@@ -211,8 +211,7 @@ span {
   outline: none;
 }
 /* Section advantages */
-.section-title-hidden {
-  color: var(--title-text-color);
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
@@ -609,6 +608,7 @@ b {
 .button-input:active {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  outline: none;
 }
 .contact-input:focus {
   outline: none;
@@ -634,6 +634,8 @@ b {
   position: absolute;
   left: 50%;
   top: 100px;
+  padding: 0 40px;
+  padding-top: 75px;
   transform: translateX(-50%) scale(1);
   width: 528px;
   height: 581px;
@@ -647,12 +649,121 @@ b {
   right: 10px;
   top: 10px;
   cursor: pointer;
+  fill: var(--title-text-color);
+}
+.button-modal:active,
+.button-modal:hover {
+  fill: var(--accent-color);
 }
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) scale(0.1);
+}
+.modal-form > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.modal-form-input:focus,
+.modal-form-message:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.modal-form-input:focus ~ .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 12px;
+  fill: var(--title-text-color);
+}
+.modal-form-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.modal-form-input-label {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-form-input-text {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+.modal-form-check:checked + .label-form-modal-check::before {
+  background-color: var(--accent-color);
+  background-image: url("./images/check.svg");
+}
+.label-form-modal-check {
+  display: flex;
+  align-items: center;
+}
+.label-form-modal-check::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 2px solid var(--title-text-color);
+  background-color: var(--primary-white-color);
+  margin-right: 6px;
+}
+.modal-check-link {
+  margin-left: 5px;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.modal-span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* Стили для portfolio.html */
