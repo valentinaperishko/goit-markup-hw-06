@@ -567,6 +567,9 @@ b {
   width: 100%;
   width: 570px;
 }
+.input-form {
+  display: flex;
+}
 .contact-input {
   width: 358px;
   height: 50px;
@@ -577,6 +580,9 @@ b {
   color: var(--primary-white-color);
 }
 .button-input {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
