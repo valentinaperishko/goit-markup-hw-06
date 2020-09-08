@@ -468,11 +468,9 @@ span {
 }
 .container.footer {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
-  /* max-width: 270px; */
+  padding: 0;
 }
 
 .address {
@@ -480,8 +478,7 @@ span {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  /* margin-left: 93px; */
-  margin-right: 0;
+  margin-right: 70px;
   max-width: 270px;
 }
 .address-items {
@@ -520,9 +517,9 @@ span {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 30px;
-  margin-right: 0;
+  margin-right: 93px;
   padding: 0;
+  padding-right: 30px;
   max-width: 270px;
 }
 b {
@@ -565,10 +562,9 @@ b {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 30px;
-  margin-right: 0;
   padding: 0;
-  max-width: 570px;
+  width: 100%;
+  width: 570px;
 }
 .contact-input {
   width: 358px;
@@ -581,8 +577,12 @@ b {
 }
 .button-input {
   border-radius: 4px;
-  padding: 10px 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
   min-width: 200px;
+  height: 50px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -605,6 +605,14 @@ b {
 }
 .contact-input:focus {
   outline: none;
+}
+.submit-item-svg {
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+}
+.button-input:hover .submit-item-svg,
+.button-input:active .submit-item-svg {
+  fill: var(--accent-color);
 }
 .backdrop {
   position: fixed;
