@@ -673,6 +673,9 @@ b {
   transition: transform 500ms linear 500ms;
 }
 .button-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 10px;
   top: 10px;
