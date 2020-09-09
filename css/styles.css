@@ -706,7 +706,6 @@ b {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 30px;
 }
 .modal-form {
   display: flex;
@@ -736,8 +735,13 @@ b {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-  /* margin-top: 20px;
-  margin-bottom: 30px; */
+}
+.modal-form-message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-icon {
@@ -750,15 +754,12 @@ b {
 }
 .modal-form-field {
   position: relative;
-  /* margin-bottom: 40px; */
-}
-.modal-form-field:not(:last-child) {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .modal-form-input-label {
   position: absolute;
-  top: -26px;
+  top: -20px;
   left: 0;
   font-weight: 400;
   font-size: 12px;
@@ -768,27 +769,8 @@ b {
   color: var(--primary-text-color);
 }
 
-.modal-form-input-label::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form-input-label::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form-input-label:-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+.modal-form-input-label::-webkit-input-placeholder .modal-form-input-label::-moz-placeholder,
+.modal-form-input-label:-moz-placeholder,
 .modal-form-input-label::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -797,12 +779,14 @@ b {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-check:checked + .label-form-modal-check::before {
-  color: var(--accent-color);
-  background-image: url("./images/check.svg");
+  background-color: var(--accent-color);
+  background-image: url("../images/check.svg");
 }
 .label-form-modal-check {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .label-form-modal-check::before {
   display: block;
@@ -832,6 +816,9 @@ b {
 .modal form .button {
   width: 200px;
   height: 50px;
+}
+.checkbox-field {
+  text-align: center;
 }
 
 /* Стили для portfolio.html */
