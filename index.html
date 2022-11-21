@@ -594,7 +594,7 @@
         </div>
         <div class="footer-form-space">
           <p class="footer-text">Підпишіться на розсилку</p>
-          <form class="footer-form">
+          <form name="subscribe_form">
             <label>
               <input
                 type="email"
@@ -621,6 +621,34 @@
             <use href="./images/symbol-defs.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <p class="modal-message">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form" name="modal_form">
+          <div class="modal-form-group" role="group">
+            <div class="modal-form-wrapper">
+              <label for="user_name" class="modal-form-label">Ім'я</label>
+              <input type="text" class="modal-form-input" id="user_name" />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+              </svg>
+            </div>
+            <div class="modal-form-wrapper">
+              <label for="user_phone" class="modal-form-label">Телефон</label>
+              <input type="tel" class="modal-form-input" id="user_phone" />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+            <div class="modal-form-wrapper">
+              <label for="user_email" class="modal-form-label">Пошта</label>
+              <input type="text" class="modal-form-input" id="user_email" />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+              </svg>
+            </div>
+            <label></label>
+            <textarea>g</textarea>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
